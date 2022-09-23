@@ -2,6 +2,14 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Login from "../views/Login";
 import Home from "../views/Home";
+import Welcome from "../views/Welcome";
+import Users from "../views/users/Users";
+// import Right from "../views/power/Right";
+// import Roles from "../views/power/Roles";
+// import Cate from "../views/goods/Cate";
+// import Params from "../views/goods/Params";
+// import List from "../views/goods/List";
+// import Add from "../views/goods/Add";
 Vue.use(VueRouter);
 const routes = [
   {
@@ -15,6 +23,41 @@ const routes = [
   {
     path: "/home",
     component: Home,
+    redirect: "/welcome",
+    children: [
+      {
+        path: "/welcome",
+        component: Welcome,
+      },
+      {
+        path: "/users",
+        component: Users,
+      },
+      // {
+      //   path: "rights",
+      //   component: Right,
+      // },
+      // {
+      //   path: "roles",
+      //   component: Roles,
+      // },
+      // {
+      //   path: "categories",
+      //   component: Cate,
+      // },
+      // {
+      //   path: "params",
+      //   component: Params,
+      // },
+      // {
+      //   path: "goods",
+      //   component: List,
+      // },
+      // {
+      //   path: "goods/add",
+      //   component: Add,
+      // },
+    ],
   },
 ];
 

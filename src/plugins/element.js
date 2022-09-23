@@ -34,6 +34,7 @@ import {
   Tabs,
   Step,
   Steps,
+  MenuItemGroup,
 } from "element-ui";
 Vue.use(Button);
 Vue.use(Form);
@@ -67,5 +68,6 @@ Vue.use(Tabs);
 Vue.use(TabPane);
 Vue.use(Step);
 Vue.use(Steps);
+Vue.use(MenuItemGroup);
 Vue.prototype.$message = Message;
-// Vue.prototype.$confirm = MessageBox.confirm;
+Vue.prototype.$confirm = MessageBox.confirm;

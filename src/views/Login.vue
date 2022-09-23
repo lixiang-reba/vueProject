@@ -41,7 +41,7 @@ export default {
             },
             // 登陆表单验证规则
             loginFormRules: {
-                name: [
+                username: [
                     { required: true, message: '请输入用户名', trigger: 'blur' }
                 ],
                 password: [
