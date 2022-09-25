@@ -4,8 +4,8 @@ import Login from "../views/Login";
 import Home from "../views/Home";
 import Welcome from "../views/Welcome";
 import Users from "../views/users/Users";
-// import Right from "../views/power/Right";
-// import Roles from "../views/power/Roles";
+import Rights from "../views/power/Rights";
+import Roles from "../views/power/Roles";
 // import Cate from "../views/goods/Cate";
 // import Params from "../views/goods/Params";
 // import List from "../views/goods/List";
@@ -33,14 +33,14 @@ const routes = [
         path: "/users",
         component: Users,
       },
-      // {
-      //   path: "rights",
-      //   component: Right,
-      // },
-      // {
-      //   path: "roles",
-      //   component: Roles,
-      // },
+      {
+        path: "/rights",
+        component: Rights,
+      },
+      {
+        path: "/roles",
+        component: Roles,
+      },
       // {
       //   path: "categories",
       //   component: Cate,
