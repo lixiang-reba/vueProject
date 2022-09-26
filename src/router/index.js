@@ -6,7 +6,7 @@ import Welcome from "../views/Welcome";
 import Users from "../views/users/Users";
 import Rights from "../views/power/Rights";
 import Roles from "../views/power/Roles";
-// import Cate from "../views/goods/Cate";
+import Cate from "../views/goods/Cate";
 // import Params from "../views/goods/Params";
 // import List from "../views/goods/List";
 // import Add from "../views/goods/Add";
@@ -41,10 +41,10 @@ const routes = [
         path: "/roles",
         component: Roles,
       },
-      // {
-      //   path: "categories",
-      //   component: Cate,
-      // },
+      {
+        path: "/categories",
+        component: Cate,
+      },
       // {
       //   path: "params",
       //   component: Params,

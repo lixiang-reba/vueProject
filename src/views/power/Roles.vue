@@ -264,6 +264,7 @@ export default {
                 return this.$message.error('获取权限列表数据失败')
             }
             this.setRightTree = res.data
+            console.log(this.setRightTree);
             this.getDefKeys(node)
         },
         // 获取角色下所有三级权限的id
